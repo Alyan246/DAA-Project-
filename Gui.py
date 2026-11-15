@@ -46,6 +46,7 @@ class MainWindow(QMainWindow):
         row.setSpacing(30)
         b1 = QPushButton("KARATSUBA\n\nInteger multiplication")
         b2 = QPushButton("CLOSEST PAIR\n\nPoints in the plane")
+        
         for b in (b1, b2):
             b.setObjectName("card")
         b1.clicked.connect(lambda: self.stack.setCurrentIndex(1))
